@@ -2,7 +2,7 @@
 
 :root{
    --color-primary:#2E0249;
-   --secondary-color:#570A57; 
+   --color-secondary:#570A57; 
    --color-tertiary:#A91079;
    --color-light:#FFFFFF;
 }
@@ -29,6 +29,8 @@ nav{
     z-index: 1;
 }
 
+
+
 .container{
     width: 86%;
     margin: 0 auto;
@@ -37,14 +39,18 @@ nav{
 nav .container{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     position: relative;
     padding: 1.5rem 0;
 }
 
 
+
+
 nav .container img{
-width: 4.2rem;
+width: 4rem;
+height: 4rem;
+border-radius: 50%;
 }
 
 nav .container ul{
@@ -56,9 +62,14 @@ nav .container ul li{
 list-style: none;
 }
 
+nav .container ul li :hover{
+    background: blueviolet;
+    border-radius: 5px;
+}
+
 a{
-    color: #FFFFFF;
-    font-size: 0.9rem;
+    color:#b2d2e0;
+    font-size: 1rem;
     text-decoration: none;
 }
 section{
@@ -85,3 +96,55 @@ section .container h3{
     margin-bottom: 3rem;
     font-family: 'Dancing Script', cursive;
 }
+
+
+.btn:hover{
+    background: brown;
+    border-radius: 5px;
+}
+.btn{
+    text-align: center;
+    margin: 0 auto;
+    color: #FFFFFF;
+    background: #FFFFFF;
+    padding: 0.5rem;
+    width: 150px;
+    border: none;
+    border-radius: 5px;
+    
+}
+
+section.container p{
+    letter-spacing: 0.06rem;
+    font-size: 1rem;
+    line-height: 1.7;
+    font-weight: 300;
+    max-width: 40rem;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+    
+}
+
+section .container a{
+    background: linear-gradient(to right, var(--color-secondary), var(--color-primary));
+    padding:0.07rem 3rem;
+    margin: 0rem;
+    border-radius: 2rem;
+    position: relative;
+    transition: all 500ms ease-in-out; 
+}
+
+section .container a::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left:-0.5rem;
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+    border-left: 5px solid var(--color-primary);
+    z-index: 0;
+    transition: all 300ms ease-in-out;
+}
+
+    

@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+.container{
+    max-width: 1320px;
+}
+
+section{
+    overflow: hidden;
+}
+
+.section-bg{
+    background: #f5f8fd;
+}
+
+.section-header h3{
+    font-size: 36px;
+    color:brown;
+    text-align: center;
+    font-weight: 700;
+  position: relative;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.section-header p{
+    text-align: center;
+    margin: auto;
+    font-size: 15px;
+    padding-bottom: 60px;
+    color: blueviolet;
+    width: 50%;
+}
+
+#service{
+    padding: 60px 0 40px 0;
+}
+
+#services .box{
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 0 10px 40px 10px;
+    background:burlywood;
+    box-shadow: 0 10px 29px 0 rgb(64, 3, 121);
+    transition: all 0.3s ease-in-out;
+    text-align:center ;
+
+}
